@@ -1,0 +1,21 @@
+@media (min-width: $screen-md-min) {
+
+  .contact-list-container {
+
+    .contact {
+      width: 25%;
+
+      picture {
+        width: 100%;
+        display: inline-block;
+
+      }
+
+      .basic-info {
+        width: 100%;
+      }
+    }
+
+  }
+
+}

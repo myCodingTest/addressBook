@@ -1,0 +1,77 @@
+.contact-list-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .contact {
+    width: 100%;
+    display: block;
+
+    padding: 2%;
+
+    &:nth-child(even) {
+      background-color: $gray-lighter;
+    }
+
+    picture {
+      margin: 1.2em auto;
+      width: 100%;
+      display: block;
+      text-align: center;
+
+      img {
+        border-radius: 5em;
+
+        -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+        -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+        box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+      }
+    }
+
+    .basic-info {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      font-size: $font-size-large;
+      font-weight: bold;
+      margin: 0.3em auto;
+
+      .title {
+        text-transform: capitalize;
+      }
+
+      .first-name {
+        text-transform: capitalize;
+      }
+
+      .last-name {
+        text-transform: capitalize;
+      }
+
+    }
+
+    .dob {
+      text-align: center;
+    }
+
+    .personal-contact {
+      width: 100%;
+      display: inline-block;
+
+      .phone {}
+
+      .cell {}
+
+      .email-address {
+        span {
+          font-size: $font-size-h2;
+        }
+      }
+    }
+
+  }
+}
+
+
+@import "list.tablet";
+@import "list.medium";
+@import "list.large";

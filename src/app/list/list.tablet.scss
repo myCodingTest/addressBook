@@ -1,0 +1,29 @@
+@media (min-width: $screen-sm-min) {
+  .contact-list-container {
+
+    .contact {
+      width: 50%;
+      border: 1px solid $gray-lighter;
+
+      &:nth-child(even) {
+        background-color: $body-bg;
+      }
+
+      picture {
+        width: 40%;
+        display: inline-block;
+
+      }
+
+      .basic-info {
+        width: 50%;
+      }
+
+      .dob {
+        text-align: left;
+      }
+
+    }
+  }
+
+}

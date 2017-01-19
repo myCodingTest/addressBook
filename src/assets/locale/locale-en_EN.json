@@ -1,0 +1,7 @@
+{
+  "phone": "Phone: {{number}}",
+  "cell": "Cell: {{mobile}}",
+  "email": "E-mail address: {{email}}",
+  "username": "Username: {{username}}",
+  "address": "Indirizzo"
+}

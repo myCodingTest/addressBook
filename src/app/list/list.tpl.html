@@ -1,0 +1,41 @@
+<div class="contact-list-container">
+
+    <div data-ng-repeat="contact in list.contactList" class="contact">
+        <picture>
+            <a  href="#" ui-sref="edit({id: $index})">
+                <img data-ng-src="{{contact.picture.large}}">
+            </a>
+        </picture>
+
+        <div class="basic-info">
+            <span class="title">{{contact.name.title}} </span>
+            <span class="first-name">{{contact.name.first}}</span>
+            <span class="last-name"> {{contact.name.last}}</span>
+        </div>
+
+        <h5 class="dob"> {{contact.dob}}</h5>
+        <h5 class="user-name" translate="username" translate-values="{username: '{{contact.login.username}}'}"></h5>
+
+
+        <div class="personal-contact">
+            <div class="phone" translate="phone"
+                 translate-values="{number : '{{contact.phone}}'}"></div>
+
+            <div class="cell" translate="cell"
+                 translate-values="{mobile: '{{contact.cell}}'}"></div>
+
+            <div class="email-address" translate="email"
+                 translate-values="{email: '{{contact.email}}'}"></div>
+        </div>
+
+        <div class="address">
+            <h3 translate>address</h3>
+            <div class="street">{{contact.location.street}}</div>
+            <div class="city">{{contact.location.city}}</div>
+            <div class="state">{{contact.location.state}}</div>
+            <div class="postcode">{{contact.location.postcode}}</div>
+        </div>
+
+    </div>
+
+</div>
