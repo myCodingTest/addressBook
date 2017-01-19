@@ -8,8 +8,8 @@
     "npm": "3.8.9"
   },
   "scripts": {
-    "start": "grunt compile serve",
-    "start:dev": "grunt build serve"
+    "start": "./node_modules/grunt-cli/bin/grunt compile serve",
+    "start:dev": "./node_modules/grunt-cli/bin/grunt build serve"
   },
   "dependencies": {
     "angular": "^1.5.0",
