@@ -1,1 +1,1 @@
-web: yarn start
+web: gem install sass && node server.js
