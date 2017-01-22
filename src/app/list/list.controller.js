@@ -5,14 +5,7 @@
         .module('application.list')
         .controller('ListController', ListController);
 
-    function ListController(listService) {
-        var list = this;
+    function ListController() {
 
-
-        listService.getContactList().then(
-            function (data) {
-                list.contactList = data;
-            }
-        );
     }
 })();

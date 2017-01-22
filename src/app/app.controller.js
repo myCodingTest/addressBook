@@ -5,17 +5,28 @@
     .module('application')
     .controller('ApplicationController', ApplicationController);
 
-  function ApplicationController() {
+  function ApplicationController(listService, $translate) {
     var app = this;
 
     app.pageTitle = 'Address Book';
 
-    app.toggleLang = function() {
-      if ($translate.use() === 'en_EN') {
-        $translate.use('it_IT');
-      } else {
-        $translate.use('en_EN');
-      }
+    listService.getContactList().then(
+        function (data) {
+          app.contactList = data;
+        }
+    );
+
+    app.currentLang = $translate.use();
+
+    app.availableLang = ['IT', 'EN'];
+    app.allLang = {
+      'EN': 'en_EN',
+      'IT': 'it_IT'
+    };
+
+    app.toggleLang = function(lang) {
+      $translate.use(lang);
+      app.currentLang = $translate.use();
     };
 
   }

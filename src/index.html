@@ -16,6 +16,14 @@
 
   </head>
   <body>
+    <div class="flag-container">
+      <div ng-repeat="lang in app.availableLang" class="flag flag-{{lang}}"
+           ng-class="{active: app.currentLang === app.allLang[lang]}"
+           ng-click="app.toggleLang(app.allLang[lang])">
+        {{lang}}
+      </div>
+    </div>
+
     <div class="contact-list-container" ui-view="main"></div>
   </body>
 </html>

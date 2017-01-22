@@ -1,6 +1,6 @@
 <div class="contact-list-container">
 
-    <div data-ng-repeat="contact in list.contactList" class="contact">
+    <div data-ng-repeat="contact in app.contactList" class="contact">
         <picture>
             <a  href="#" ui-sref="edit({id: $index})">
                 <img data-ng-src="{{contact.picture.large}}">
