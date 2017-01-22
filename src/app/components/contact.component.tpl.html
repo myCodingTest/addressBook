@@ -1,0 +1,37 @@
+<div>
+    <picture>
+        <a ng-click="$ctrl.editContact()">
+            <img data-ng-src="{{$ctrl.contact.picture.large}}">
+        </a>
+    </picture>
+
+    <div class="basic-info">
+        <span class="title">{{$ctrl.contact.name.title}} </span>
+        <span class="first-name">{{$ctrl.contact.name.first}}</span>
+        <span class="last-name"> {{$ctrl.contact.name.last}}</span>
+    </div>
+
+    <h5 class="dob hidden-xs"> {{$ctrl.contact.dob}}</h5>
+    <h5 class="user-name hidden-xs" translate="username" translate-values="{username: '{{$ctrl.contact.login.username}}'}"></h5>
+
+
+    <div class="personal-contact hidden-xs">
+        <div class="phone" translate="phone"
+             translate-values="{number : '{{$ctrl.contact.phone}}'}"></div>
+
+        <div class="cell" translate="cell"
+             translate-values="{mobile: '{{$ctrl.contact.cell}}'}"></div>
+
+        <div class="email-address" translate="email"
+             translate-values="{email: '{{$ctrl.contact.email}}'}"></div>
+    </div>
+
+    <div class="address hidden-xs">
+        <h3 translate>address</h3>
+        <div class="street">{{$ctrl.contact.location.street}}</div>
+        <div class="city">{{$ctrl.contact.location.city}}</div>
+        <div class="state">{{$ctrl.contact.location.state}}</div>
+        <div class="postcode">{{$ctrl.contact.location.postcode}}</div>
+    </div>
+
+</div>

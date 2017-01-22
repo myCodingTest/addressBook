@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "grunt compile",
     "start": "node server.js",
-    "start:dev": "grunt build serve"
+    "start:dev": "grunt clean build serve"
   },
   "dependencies": {
     "angular": "^1.6.1",
@@ -46,6 +46,7 @@
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.2",
+    "karma-phantomjs2-launcher": "^0.5.0",
     "phantomjs-polyfill": "^0.0.2"
   }
 }

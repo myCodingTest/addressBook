@@ -10,8 +10,18 @@
       }
 
       picture {
+        margin: 1.2em auto;
         width: 40%;
         display: inline-block;
+        text-align: center;
+
+        img {
+          border-radius: 5em;
+
+          -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+          -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+          box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+        }
 
       }
 
@@ -21,6 +31,7 @@
 
       .dob {
         text-align: left;
+        display: block;
       }
 
     }

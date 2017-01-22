@@ -5,6 +5,7 @@
     .module('application', [
         'templates-app',
         'templates-common',
+        'application.components',
         'application.home',
         'application.list',
         'application.edit',
