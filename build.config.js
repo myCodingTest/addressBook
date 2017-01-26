@@ -41,7 +41,8 @@ module.exports = {
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-translate/dist/angular-translate.js',
-      'node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.js'
+      'node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+      'node_modules/ng-lodash/build/ng-lodash.min.js'
     ]
   },
 
@@ -71,7 +72,8 @@ module.exports = {
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/boostrap/dist/js/bootstrap.min.js',
       'node_modules/angular-translate/dist/angular-translate.min.js',
-      'node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js'
+      'node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
+      'node_modules/ng-lodash/build/ng-lodash.min.js'
     ],
     css: [
     ],

@@ -3,5 +3,7 @@
   "cell": "Cellulare: {{mobile}}",
   "email": "Indirizzo e-mail: {{email}}",
   "username": "Username: {{username}}",
-  "address": "Indirizzo"
+  "address": "Indirizzo",
+  "backHome": "Torna indietro",
+  "save": "Save"
 }

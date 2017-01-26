@@ -7,7 +7,7 @@
 
   function EditConfig($stateProvider) {
     $stateProvider.state( 'edit', {
-      url: '/edit/:id',
+      url: '/edit/:username',
       views: {
         "main": {
           controller: 'EditController',

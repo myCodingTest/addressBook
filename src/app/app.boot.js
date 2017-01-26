@@ -11,7 +11,8 @@
         'application.edit',
         'application.services',
         'ui.router',
-        'pascalprecht.translate'
+        'pascalprecht.translate',
+        'ngLodash'
     ])
     .run(run);
 

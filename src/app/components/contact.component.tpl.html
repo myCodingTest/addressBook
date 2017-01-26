@@ -1,6 +1,6 @@
 <div>
     <picture>
-        <a ng-click="$ctrl.editContact()">
+        <a ui-sref="edit({username: $ctrl.contact.login.username})">
             <img data-ng-src="{{$ctrl.contact.picture.large}}">
         </a>
     </picture>
@@ -12,7 +12,8 @@
     </div>
 
     <h5 class="dob hidden-xs"> {{$ctrl.contact.dob}}</h5>
-    <h5 class="user-name hidden-xs" translate="username" translate-values="{username: '{{$ctrl.contact.login.username}}'}"></h5>
+    <h5 class="user-name hidden-xs" translate="username"
+        translate-values="{username: '{{$ctrl.contact.login.username}}'}"></h5>
 
 
     <div class="personal-contact hidden-xs">

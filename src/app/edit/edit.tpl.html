@@ -1,5 +1,17 @@
-<div class="contact-edit-container">
-    <pre>
-        {{edit.contact}}
-    </pre>
+<div class="contact-edit-container container-fluid">
+
+    <div>
+        <a ui-sref="list" >{{"backHome" | translate}}</a>
+    </div>
+
+    <picture>
+        <img ng-src="{{edit.contact.picture.large}}" />
+    </picture>
+
+    <input type="text" ng-model="edit.contact.name.first" value="" />
+    <input type="text" ng-model="edit.contact.name.last" />
+
+
+    <button ng-click="edit.save()">{{"save" | translate}}</button>
+
 </div>
