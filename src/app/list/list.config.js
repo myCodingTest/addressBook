@@ -7,7 +7,7 @@
 
   function ListConfig($stateProvider) {
     $stateProvider.state( 'list', {
-      url: '/list',
+      url: '/',
       views: {
         "main": {
           controller: 'ListController',
