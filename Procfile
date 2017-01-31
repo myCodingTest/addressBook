@@ -1,1 +1,1 @@
-web: gem install sass && yarn start
+web: gem install sass && grunt clean compile serve
