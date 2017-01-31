@@ -1,1 +1,1 @@
-web: gem install sass && grunt clean compile serve
+web: grunt clean compile serve
